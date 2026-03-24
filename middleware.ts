@@ -12,7 +12,8 @@ export default clerkMiddleware(async (auth, req) => {
   if (isProtectedRoute(req)) {
     await auth.protect()
   }
-  return await updateSession(req)
+  // Temporarily disable Supabase session refresh to debug Edge module error
+  // return await updateSession(req)
 })
 
 export const config = {
