@@ -18,13 +18,8 @@ export async function parseReceipt(imageUrl: string) {
           },
           {
             type: 'text',
-            text: `Extract the following from this receipt and return ONLY valid JSON, no markdown, no explanation:
-{
-  "vendor": "store or restaurant name",
-  "amount": 0.00,
-  "date": "YYYY-MM-DD",
-  "category": "one of: Food, Transport, Office, Travel, Shopping, Health, Other"
-}
+            text: `Extract the following from this receipt and return ONLY valid JSON, no markdown:
+{ vendor: string, amount: number, date: 'YYYY-MM-DD', category: one of Food/Transport/Office/Travel/Shopping/Health/Other }
 If you cannot determine a field, use null.`,
           },
         ],
