@@ -3,7 +3,7 @@
 A full-stack SaaS app that uploads receipts, uses GPT-4o to extract data automatically, and gives you a dashboard to track and analyze spending.
 
 ## Live Demo
-🔗 Coming soon
+🔗 [ai-powered-invoice-expense-manager.vercel.app](https://ai-powered-invoice-expense-manager.vercel.app/)
 
 ## Tech Stack
 - **Frontend:** Next.js 14, Tailwind CSS, shadcn/ui
