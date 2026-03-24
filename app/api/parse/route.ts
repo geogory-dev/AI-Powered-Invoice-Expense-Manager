@@ -2,6 +2,8 @@ import { auth } from '@clerk/nextjs/server'
 import { NextRequest, NextResponse } from 'next/server'
 import { parseReceipt } from '@/lib/openai'
 
+// Increase the Vercel Hobby Serverless timeout from 10s to 60s
+export const maxDuration = 60;
 export async function POST(req: NextRequest) {
   const { userId } = await auth()
   if (!userId) {
